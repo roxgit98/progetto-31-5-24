@@ -12,6 +12,9 @@ header {
 nav {
   border-bottom: solid 1px black;
   padding: 1%;
+  position: sticky;
+  top: 0;
+  z-index: 3;
 }
 #navBar {
   display: flex;
