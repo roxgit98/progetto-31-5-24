@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
 
@@ -15,16 +25,18 @@
       <nav>
         <div id="navBar">
           <img src="./assets/imgs/svg/logo.svg" alt="logo medium" />
-          <a href="#">Our story</a>
-          <a href="#">Membership</a>
-          <a href="#">Write</a>
-          <a href="#">Sign In</a>
+          <div id="links">
+            <a href="#">Our story</a>
+            <a href="#">Membership</a>
+            <a href="#">Write</a>
+            <a href="#">Sign In</a>
+          </div>
           <button type="button">Get started</button>
         </div>
       </nav>
 
       <div id="heroSection">
-        <h1>Stay curious</h1>
+        <h1>Stay curious.</h1>
         <p>
           Discover stories, thinking, and expertise from writers on any topic.
         </p>
@@ -38,9 +50,9 @@
           height="10"
           preserveAspectRatio="xMidYMid meet"
           style="
-            width: 10%;
-            height: 10%;
-            transform: translate3d(0px, 0px, 0px);
+            width: 56%;
+            height: 390%;
+            transform: translate3d(334px, 0px, 0px);
             content-visibility: visible;
           "
         >
@@ -9240,87 +9252,101 @@
     <!-- sezione trending -->
 
     <main>
+      <div id="inizioTrend">
+        <img
+          src="./assets/imgs/svg/trending.svg"
+          alt="logo trend"
+          class="logoTrend"
+        />
+        <h3>TRENDING ON MEDIUM</h3>
+      </div>
       <div id="trending">
-        <img src="./assets/imgs/svg/trending.svg" alt="logo trend" />
-        <h3>Trending on medium</h3>
-
         <!-- trend news 1 -->
 
         <div class="trendNews">
-          <span>01</span>
-          <img src="./assets/imgs/image01.jpeg" alt="proPic" />
+          <span class="numeri">01</span>
+          <img src="./assets/imgs/image01.jpeg" alt="proPic" class="proPic" />
           <p>Tom Cooper</p>
           <h3>Ukraine War, 23 October 2022</h3>
-          <span>Oct 23 · 5 min read</span>
+          <span class="read">Oct 23 · 5 min read</span>
         </div>
 
         <!-- trend news 2 -->
 
         <div class="trendNews">
-          <span>02</span>
-          <img src="./assets/imgs/image02.png" alt="proPic" />
-          <p>Arthur Hayes <span>in</span> Entrepreneur's Handbook</p>
+          <span class="numeri">02</span>
+          <img src="./assets/imgs/image02.png" alt="proPic" class="proPic" />
+          <p>
+            Arthur Hayes <span class="read">in</span> Entrepreneur's Handbook
+          </p>
           <h3>Comeback</h3>
-          <span>Oct 26 · 24 min read</span>
+          <span class="read">Oct 26 · 24 min read</span>
         </div>
 
         <!-- trend news 3 -->
 
         <div class="trendNews">
-          <span>03</span>
-          <img src="./assets/imgs/image03.jpeg" alt="proPic" />
-          <p>Erin A Ross <span>in</span> Slackjaw</p>
+          <span class="numeri">03</span>
+          <img src="./assets/imgs/image03.jpeg" alt="proPic" class="proPic" />
+          <p>Erin A Ross <span class="read">in</span> Slackjaw</p>
           <h3>
             How I Learned to Love My Breasts Even Though One Is A Horcrux For
             Voldemort
           </h3>
-          <span>Oct 26 · 2 min read</span>
+          <span class="read">Oct 26 · 2 min read</span>
         </div>
 
         <!-- trend news 4 -->
 
         <div class="trendNews">
-          <span>04</span>
-          <img src="./assets/imgs/image04.png" alt="proPic" />
-          <p>Frank Mastropolo<span>in</span> The Riff</p>
+          <span class="numeri">04</span>
+          <img src="./assets/imgs/image04.png" alt="proPic" class="proPic" />
+          <p>Frank Mastropolo<span class="read">in</span> The Riff</p>
           <h3>The Night Paul McCartney Donned a Disguise at Fillmore East</h3>
-          <span>Oct 22 · 3 min read</span>
-          <img src="./assets/imgs/svg/star.svg" alt="star" />
+          <span class="read">Oct 22 · 3 min read</span>
+          <img src="./assets/imgs/svg/star.svg" alt="star" class="star" />
         </div>
 
         <!-- trend news 5 -->
 
         <div class="trendNews">
-          <span>05</span>
-          <img src="./assets/imgs/image05.jpeg" alt="proPic" />
-          <p>Frank Andrade <span>in</span> Towards Data Science</p>
+          <span class="numeri">05</span>
+          <img src="./assets/imgs/image05.jpeg" alt="proPic" class="proPic" />
+          <p>Frank Andrade <span class="read">in</span> Towards Data Science</p>
           <h3>
             5 Python Projects to Automate Your Life: From Beginner to Advanced
           </h3>
-          <span>Oct 13 · 6 min read</span>
-          <img src="./assets/imgs/svg/star.svg" alt="star" />
+          <span class="read">Oct 13 · 6 min read</span>
+          <img src="./assets/imgs/svg/star.svg" alt="star" class="star" />
         </div>
 
         <!-- trend news 6 -->
 
         <div class="trendNews">
-          <span>06</span>
-          <img src="./assets/imgs/image06.png" alt="proPic" />
-          <p>Wesley Smits <span>in</span> JavaScript in Plain English</p>
+          <span class="numeri">06</span>
+          <img src="./assets/imgs/image06.png" alt="proPic" class="proPic" />
+          <p>
+            Wesley Smits <span class="read">in</span> JavaScript in Plain
+            English
+          </p>
           <h3>How To Make Visual Studio Code Look Amazing</h3>
-          <span>Oct 20 · 7 min read</span>
-          <img src="./assets/imgs/svg/star.svg" alt="star" />
+          <span class="read">Oct 20 · 7 min read</span>
+          <img src="./assets/imgs/svg/star.svg" alt="star" class="star" />
         </div>
       </div>
 
-      <!-- sezione side sinistra -->
+      <!-- sezione sinistra -->
 
       <div id="sideNewsContainer">
         <!-- news 1 -->
 
         <div class="sideNews">
-          <img src="./assets/imgs/image07.jpeg" alt="proPic" />
-          <p>Robert Roy Britt</p>
+          <img
+            src="./assets/imgs/image07.jpeg"
+            alt="proPic"
+            class="proPicSide"
+          />
+          <p class="nome">Robert Roy Britt</p>
           <h3>How Old is Old?</h3>
           <p>
             What we consider “old” changes dramatically with age, and our
@@ -9328,33 +9354,57 @@
           </p>
           <p>
             Oct 27 · 5 min read · <span>Aging</span>
-            <img src="./assets/imgs/svg/star.svg" alt="star" />
-            <img src="./assets/imgs/svg/bookmark.svg" alt="bookmark" />
+            <img src="./assets/imgs/svg/star.svg" alt="star" class="starSide" />
+            <img
+              src="./assets/imgs/svg/bookmark.svg"
+              alt="bookmark"
+              class="bookmark"
+            />
           </p>
-          <img src="./assets/imgs/image08.jpeg" alt="immagine articolo" />
+          <img
+            src="./assets/imgs/image08.jpeg"
+            alt="immagine articolo"
+            class="immagineArticolo"
+          />
         </div>
 
         <!-- news 2 -->
 
         <div class="sideNews">
-          <img src="./assets/imgs/image09.jpeg" alt="proPic" />
-          <p>Taru Anniina Liikanen</p>
+          <img
+            src="./assets/imgs/image09.jpeg"
+            alt="proPic"
+            class="proPicSide"
+          />
+          <p class="nome">Taru Anniina Liikanen</p>
 
           <h3>Is Taylor Swift Allowed to Speak About Fat?</h3>
           <p>Can you speak about your trauma if you don't look traumatized?</p>
           <p>
-            Oct 15 · 5 min read · <span> Software Engineering </span>
-            <img src="./assets/imgs/svg/star.svg" alt="star" />
-            <img src="./assets/imgs/svg/bookmark.svg" alt="bookmark" />
+            Oct 15 · 5 min read · <span>Health </span>
+            <img src="./assets/imgs/svg/star.svg" alt="star" class="starSide" />
+            <img
+              src="./assets/imgs/svg/bookmark.svg"
+              alt="bookmark"
+              class="bookmark"
+            />
           </p>
-          <img src="./assets/imgs/image10.jpeg" alt="immagine articolo" />
+          <img
+            src="./assets/imgs/image10.jpeg"
+            alt="immagine articolo"
+            class="immagineArticolo"
+          />
         </div>
 
         <!-- news 3 -->
 
         <div class="sideNews">
-          <img src="./assets/imgs/image11.jpeg" alt="proPic" />
-          <p>David Rodenas, Ph. D.</p>
+          <img
+            src="./assets/imgs/image11.jpeg"
+            alt="proPic"
+            class="proPicSide"
+          />
+          <p class="nome">David Rodenas, Ph. D.</p>
 
           <h3>Don’t Screw Up, You Will Be Found Guilty</h3>
           <p>
@@ -9363,17 +9413,29 @@
           </p>
           <p>
             Oct 15 · 5 min read · <span> Software Engineering </span>
-            <img src="./assets/imgs/svg/star.svg" alt="star" />
-            <img src="./assets/imgs/svg/bookmark.svg" alt="bookmark" />
+            <img src="./assets/imgs/svg/star.svg" alt="star" class="starSide" />
+            <img
+              src="./assets/imgs/svg/bookmark.svg"
+              alt="bookmark"
+              class="bookmark"
+            />
           </p>
-          <img src="./assets/imgs/image12.png" alt="immagine articolo" />
+          <img
+            src="./assets/imgs/image12.png"
+            alt="immagine articolo"
+            class="immagineArticolo"
+          />
         </div>
 
         <!-- news 4 -->
 
         <div class="sideNews">
-          <img src="./assets/imgs/image13.png" alt="proPic" />
-          <p>Microsoft Design</p>
+          <img
+            src="./assets/imgs/image13.png"
+            alt="proPic"
+            class="proPicSide"
+          />
+          <p class="nome">Microsoft Design</p>
 
           <h3>Leave No Trace</h3>
           <p>
@@ -9382,17 +9444,29 @@
           </p>
           <p>
             Oct 25 · 11 min read · <span>Sustainability </span>
-            <img src="./assets/imgs/svg/star.svg" alt="star" />
-            <img src="./assets/imgs/svg/bookmark.svg" alt="bookmark" />
+            <img src="./assets/imgs/svg/star.svg" alt="star" class="starSide" />
+            <img
+              src="./assets/imgs/svg/bookmark.svg"
+              alt="bookmark"
+              class="bookmark"
+            />
           </p>
-          <img src="./assets/imgs/image14.png" alt="immagine articolo" />
+          <img
+            src="./assets/imgs/image14.png"
+            alt="immagine articolo"
+            class="immagineArticolo"
+          />
         </div>
 
         <!-- news 5 -->
 
         <div class="sideNews">
-          <img src="./assets/imgs/image15.jpeg" alt="proPic" />
-          <p>Scott H. Young</p>
+          <img
+            src="./assets/imgs/image15.jpeg"
+            alt="proPic"
+            class="proPicSide"
+          />
+          <p class="nome">Scott H. Young</p>
 
           <h3>Variability, Not Repetition, is the Key to Mastery</h3>
           <p>
@@ -9401,18 +9475,30 @@
             10,000...
           </p>
           <p>
-            Oct 26 · 7 min read · <span>Health </span>
-            <img src="./assets/imgs/svg/star.svg" alt="star" />
-            <img src="./assets/imgs/svg/bookmark.svg" alt="bookmark" />
+            Oct 26 · 7 min read · <span>Learning </span>
+            <img src="./assets/imgs/svg/star.svg" alt="star" class="starSide" />
+            <img
+              src="./assets/imgs/svg/bookmark.svg"
+              alt="bookmark"
+              class="bookmark"
+            />
           </p>
-          <img src="./assets/imgs/image16.jpg" alt="immagine articolo" />
+          <img
+            src="./assets/imgs/image16.jpg"
+            alt="immagine articolo"
+            class="immagineArticolo"
+          />
         </div>
 
         <!-- news 6 -->
 
         <div class="sideNews">
-          <img src="./assets/imgs/image17.png" alt="proPic" />
-          <p>Paul A. DeStefanoin Human Parts</p>
+          <img
+            src="./assets/imgs/image17.png"
+            alt="proPic"
+            class="proPicSide"
+          />
+          <p class="nome">Paul A. DeStefanoin Human Parts</p>
 
           <h3>What I Overheard as an Escape Room Actor</h3>
           <p>
@@ -9421,17 +9507,29 @@
           </p>
           <p>
             Jan 18, 2020 · 6 min read · <span>Experiences </span>
-            <img src="./assets/imgs/svg/star.svg" alt="star" />
-            <img src="./assets/imgs/svg/bookmark.svg" alt="bookmark" />
+            <img src="./assets/imgs/svg/star.svg" alt="star" class="starSide" />
+            <img
+              src="./assets/imgs/svg/bookmark.svg"
+              alt="bookmark"
+              class="bookmark"
+            />
           </p>
-          <img src="./assets/imgs/image18.jpeg" alt="immagine articolo" />
+          <img
+            src="./assets/imgs/image18.jpeg"
+            alt="immagine articolo"
+            class="immagineArticolo"
+          />
         </div>
 
         <!-- news 7 -->
 
         <div class="sideNews">
-          <img src="./assets/imgs/image19.jpeg" alt="proPic" />
-          <p>Kim Scott</p>
+          <img
+            src="./assets/imgs/image19.jpeg"
+            alt="proPic"
+            class="proPicSide"
+          />
+          <p class="nome">Kim Scott</p>
 
           <h3>
             6 Steps for Setting Measurable Goals to Avoid “Productivity
@@ -9442,19 +9540,27 @@
             before, company, team and individual goals must be explicit and…
           </p>
           <p>
-            Oct 24 · 6 min read · <span>Health</span>
-            <img src="./assets/imgs/svg/star.svg" alt="star" />
-            <img src="./assets/imgs/svg/bookmark.svg" alt="bookmark" />
+            Oct 24 · 6 min read · <span>Productivity</span>
+            <img src="./assets/imgs/svg/star.svg" alt="star" class="starSide" />
+            <img
+              src="./assets/imgs/svg/bookmark.svg"
+              alt="bookmark"
+              class="bookmark"
+            />
           </p>
-          <img src="./assets/imgs/image20.jpg" alt="immagine articolo" />
+          <img
+            src="./assets/imgs/image20.jpg"
+            alt="immagine articolo"
+            class="immagineArticolo"
+          />
         </div>
       </div>
     </main>
 
     <!-- sezione discover -->
     <aside>
+      <h3>Discover more of what matters to you</h3>
       <div id="discoverContainer">
-        <h3>Discover more of what matters to you</h3>
         <div class="discover">
           <p>Programming</p>
         </div>
@@ -9484,16 +9590,20 @@
         </div>
       </div>
     </aside>
+
+    <!-- sezione inferiore -->
     <footer>
-      <a href="#">Help</a>
-      <a href="#">Status</a>
-      <a href="#">Writers</a>
-      <a href="#">Blog</a>
-      <a href="#">Careers</a>
-      <a href="#">Privacy</a>
-      <a href="#">Terms</a>
-      <a href="#">About</a>
-      <a href="#">Knowable</a>
+      <div id="linksPie">
+        <a href="#">Help</a>
+        <a href="#">Status</a>
+        <a href="#">Writers</a>
+        <a href="#">Blog</a>
+        <a href="#">Careers</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">About</a>
+        <a href="#">Knowable</a>
+      </div>
     </footer>
   </body>
 </html>
